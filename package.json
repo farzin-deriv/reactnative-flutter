@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "rn:run:android": "react-native run-android",
+    "rn:run:ios": "react-native run-ios",
+    "rn:start": "react-native start",
+    "rn:test": "jest",
+    "rn:lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "flutter:run": "flutter run -t src/flutter/main.dart",
+    "flutter:run:web": "flutter run -t src/flutter/main.dart -d chrome",
+    "flutter:test": "flutter test src/flutter/test",
+    "flutter:lint": "flutter analyze src/flutter"
   },
   "dependencies": {
     "react": "17.0.1",
